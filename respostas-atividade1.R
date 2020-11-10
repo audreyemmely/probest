@@ -9,7 +9,7 @@ barplot(table(dados$sexo), main = "Frequência dos dados de sexo", ylab="Frequê
 Idade.tb<-(dados$idade)
 
 limitesClass <- c(0,10,20,30,40,50,60,70,80,90,100)
-classes<-c("0-10","10-20","20-30","30-40","40-50","50-60","60-70","70,80","80-90","90-100")
+classes<-c("0-10","10-20","20-30","30-40","40-50","50-60","60-70","70-80","80-90","90-100")
 
 freq = table(cut(Idade.tb, breaks = limitesClass, right = FALSE, labels = classes))
 
