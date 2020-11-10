@@ -20,7 +20,7 @@ freqRelAc <- cumsum(freqRel)
 TabResult = cbind(freq, freqAc, freqRel = round(freqRel*100, digits = 2), freqRelAc = round(freqRelAc*100, digits = 2))
 TabResult
 
-hist(table(dados$idade), main = "Histograma da frequência dos dados da idade", xlab = "Dados", ylab="Frequência") 
+hist(Idade.tb, main = "Histograma da frequência dos dados da idade", xlab = "Dados", ylab="Frequência")  
 
 #3. Escolha duas variáveis qualitativa, sexo e situação atual, por exemplo e elabore alguns tipos de gráficos de barras.
 barplot(table(dados$situacao_atual))
